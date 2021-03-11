@@ -1,0 +1,334 @@
+  /* =============================================================== */
+  /* ====================== Blog - post Page ====================== */
+  /* ============================================================= */
+
+  div.title-blog-section {
+      width: 100%;
+      height: 260px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  div.title-blog-section > div.title-content {
+      backdrop-filter: blur(30px);
+      background-color: rgba(0, 0, 0, 0.5);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  div.title-blog-section > div.title-content > * {
+      color:var(--main-text-color);
+  }
+
+  div.title-blog-section > div.title-content > h1 {
+      font-size: 50px;
+      margin-bottom: 30px;
+  }
+
+  div.title-blog-section > div.title-content > a > span.category {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--five-bg-color);
+      border-radius: 50px;
+      margin-bottom: 40px;
+  }
+
+  div.title-blog-section > div.title-content > div.writer-sec {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  div.title-blog-section > div.title-content > div.writer-sec > img.profile-writer {
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      margin-right: 15px;
+  }
+
+  div.title-blog-section > div.title-content > div.writer-sec > span.name-writer {
+      font-size: 12px;
+      margin-right: 15px;
+  }
+
+  div.title-blog-section > div.title-content > div.writer-sec > span.date-writer {
+      font-size: 12px;
+      margin-left: 15px;
+  }
+
+    /* Responesive */
+
+    @media only screen and (max-width:992px) {
+        div.title-blog-section > div.title-content > h1 {
+            font-size: 34px;
+            text-align: center;
+        }
+    }
+
+
+  /* ============================================================== */
+  /* ====================== Content - Blog ======================= */
+  /* ============================================================ */
+  
+  div.content-blog-section {
+      width: 660px;
+      margin: 0 auto;
+  }
+
+  div.content-blog-section > span.credit-img-post {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+  div.content-blog-section > span.credit-img-post > i {
+    padding-left: 10px;
+  }
+
+  div.content-blog-section > span.credit-img-post > i > a {
+    color: var(--third-text-color);
+  }
+
+  div.content-blog-section > div.image-title-blog {
+      margin: 40px 0;
+  }
+  
+  div.content-blog-section > div.image-title-blog > img.image-blog {
+      width: 100%;
+      height: 500px;
+  }
+
+  div.content-blog-section > p.blog-content {
+    font-size: 20px;
+    line-height: 34px;
+    text-indent: 60px;
+  }
+
+  h4.title-post-content {
+      text-align: center;
+      font-size: 24px;
+  }
+
+  div.content-blog-section > table#tabel-post {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  div.content-blog-section > hr.hr-before-lasted-post {
+    margin: 40px auto;
+    width: 80%;
+    height: 4px;
+    background: var(--five-bg-color);
+    padding: 0;
+    border: none;
+  }
+  
+  div.content-blog-section > div.reference-post {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  div.content-blog-section > div.reference-post > span {
+    font-size: 24px;
+     
+  }
+
+  div.content-blog-section > div.reference-post > span > i > a {
+    color: var(--third-text-color);
+  }
+
+    /* Responesive */
+    @media only screen and (max-width:1200px) {
+        div.title-blog-section > div.title-content > h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        div.title-blog-section > div.title-content > h1 {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        div.content-blog-section > div.image-title-blog > img.image-blog {
+            height: 280px;
+        }
+    }
+
+
+  /* =============================================================== */
+  /* ====================== Lastpost Section ====================== */
+  /* ============================================================= */
+
+  div.lastpost-section {
+      width: 100%;
+      background-color: var(--third-bg-color);
+      padding: 70px 0;
+  }
+
+  div.lastpost-section > div.lastpost-container {
+      width: 1170px;
+      margin: 0 auto;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.title-lastpost {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.title-lastpost > div.title-text {
+      font-size: 22px;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.title-lastpost > div.arrow-seemore {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.title-lastpost > div.arrow-seemore > a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--second-text-color);
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    margin: 40px auto;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post > a {
+      text-decoration: none;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post > a > div.item-p {
+    width: 100%;
+    height: 210px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post > a > div.item-p > div.content-post {
+    backdrop-filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 0 20px 20px;
+    border-radius: 4px;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post > a > div.item-p > div.content-post > h5 {
+    color: var(--main-text-color);
+    font-size: 22px;
+  }
+
+  div.lastpost-section > div.lastpost-container > div.items-post > a > div.item-p > div.content-post > span {
+    color:var(--main-text-color);
+    font-size: 10px;
+    margin-top: 15px;
+  }
+
+    /* Responesive */
+    @media only screen and (max-width: 1200px ) {
+        div.content-blog-section {
+            width: 100%;
+        }
+
+        div.lastpost-section > div.lastpost-container {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 992px ) {
+
+        div.content-blog-section {
+            width: 100%;
+            padding: 10px;
+        }
+
+        div.lastpost-section > div.lastpost-container {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        div.content-blog-section {
+            width: 100%;
+        }
+
+        div.lastpost-section > div.lastpost-container {
+            width: 100%;
+            padding: 10px;
+        }
+
+        div.lastpost-section > div.lastpost-container > div.items-post {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        div.lastpost-section {
+            padding: 40px 0;
+        }
+
+        div.lastpost-section > div.lastpost-container > div.items-post > a > div.item-p > div.content-post {
+            padding: 5px;
+        }
+
+    }
+
+    /* Top top Below Reference */
+
+    div.button-to-top-blogpost {
+        width: 1170px;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    div.button-to-top-blogpost > a { 
+        display: inline-grid;
+        text-align: center;
+        text-decoration: none;
+        color: var(--second-text-color);
+        font-weight: 600;
+    }
+
+        /* Responesive */
+    @media only screen and (max-width: 1200px ) {
+        div.button-to-top-blogpost {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 992px ) {
+
+        div.button-to-top-blogpost {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        div.button-to-top-blogpost {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }

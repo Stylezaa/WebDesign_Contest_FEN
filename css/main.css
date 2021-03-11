@@ -1,0 +1,456 @@
+/* ================================================================ */
+/* =================== Import font style ========================= */
+/* ============================================================== */
+
+@font-face {
+    font-family: "NotoSansLaoUI-Light";
+    src: url("../fonts/NotoSansLaoUI-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "LaoSansPro-Regular";
+    src: url("../fonts/LaoSansPro-Regular.ttf") format("truetype");
+}
+
+/*==========================================================*/
+/*=========== Main Style For use all page =================*/
+/*========================================================*/
+
+:root {
+    /* ============ base text ====================*/
+    --main-text-color: #fff;
+    --second-text-color: #000;
+    --third-text-color: #C5192D;
+    --four-text-color:#F5F1F1;
+
+    /* ============ base background ======== */
+    --main-bg-color: #fff;
+    --second-bg-color: #000;
+    --third-bg-color: #F5F1F1;
+    --four-bg-color: #402121;
+    --five-bg-color: #C5192D;
+  }
+  
+  /* ============= Reset Browser ========== */
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* ======= Set Default font style ====== */
+  body{
+      font-family: "NotoSansLaoUI-Light",Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--main-bg-color);
+  }
+  
+    /* ============================================================ */
+    /* =========== Style Navigation Bar on Homepage ============== */
+    /* ========================================================== */
+    
+    div.landing-section > header.header-section {
+      width: 100%;
+      height: 90px;
+      background-color: rgba(0,0,0,0.7);
+      margin: 0;
+      padding: 0px 150px 0px;
+      text-align: center;
+    } 
+  
+    div.landing-section > header.header-section > nav.menu-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    div.landing-section > header.header-section > nav.menu-bar > div.logo > a > img {
+      width: 190px;
+      height: 50px;
+    }
+
+    div.landing-section > header.header-section > nav.menu-bar > ul.list-menu {
+      line-height: 70px;
+    }
+
+    div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li > a {
+      color:var(--main-text-color);
+      margin-right: 20px;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+      /* =================== Style on Responsive Navigaiton Bar on Homepage ========= */
+      label#homepage-hamburger > i {
+        color:var(--main-text-color);
+      }
+
+        /* Responesive */
+
+        @media only screen and (max-width:992px) {
+          div.landing-section > header.header-section {
+              width: 100%;
+          }
+        }
+
+    /* ========================================================================= */
+    /* =============== Style Navigation Bar on All - pages ==================== */
+    /* ======================================================================= */
+
+    div.navbar-all {
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    }
+  
+    header.header-section {
+      width: 100%;
+      height: 90px;
+      background-color: var(--main-bg-color);
+      margin: 0;
+      padding: 0px 150px 0px;
+      text-align: center;
+    } 
+  
+    header.header-section > nav.menu-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+  
+    header.header-section > nav.menu-bar > div.logo > a > img {
+      width: 190px;
+      height: 50px;
+    }
+  
+    header.header-section > nav.menu-bar > ul.list-menu {
+      line-height: 70px;
+    }
+  
+    header.header-section > nav.menu-bar > ul.list-menu > li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    header.header-section > nav.menu-bar > ul.list-menu > li > a#active {
+      border-bottom: 6px double var(--five-bg-color);
+    }
+  
+    header.header-section > nav.menu-bar > ul.list-menu > li > a {
+      color:var(--second-bg-color);
+      margin-right: 20px;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+      /* ============ Style on Responsive Navigaiton Bar on All-pages ============ */
+      label#allpage-hamburger > i {
+        color:var(--second-bg-color);
+      }
+
+        /* Responesive */
+
+        @media only screen and (max-width:1200px) {
+          header.header-section {
+              width: 100%;
+          }
+        }
+
+        @media only screen and (max-width:992px) {
+          header.header-section {
+              width: 100%;
+          }
+        }
+
+  
+        /* ================== Responsive Navigaiton Bar ===================d */
+        .checkbtn {
+          font-size: 30px;
+          float: right;
+          line-height: 80px;
+          cursor: pointer;
+          display: none;
+        }
+  
+        #check {
+          display: none;
+        }
+
+        /* Language list menu in Homepage */
+        div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(4) > a > img {
+          position: absolute;
+          top: 30px;
+        }
+
+        div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(5) > a > img {
+          position: absolute;
+          top: 30px;
+          right: 125px;
+        }
+
+        /* Language list menu in Allpage */
+        header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(4) > a > img {
+          position: absolute;
+          top: 30px;
+        }
+
+        header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(5) > a > img {
+          position: absolute;
+          top: 30px;
+          right: 125px;
+        }
+
+        @media (max-width: 858px) {
+
+          /* custom header tablet version for Homepage */
+          div.landing-section > header.header-section {
+            padding: 0;
+          }
+
+          div.landing-section > header.header-section > nav.menu-bar > div.logo {
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+
+          div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li {
+            display: block;
+          }
+
+          div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li > a {
+            color:var(--second-text-color);
+          }
+
+            /* Language list menu */
+            div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(4) > a > img {
+              position: absolute;
+              top: 280px;
+              right: 50%;
+            }
+
+            div.landing-section > header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(5) > a > img {
+              position: absolute;
+              top: 330px;
+              right: 50%;
+            }
+
+          /* custom header tablet version for Allpage */
+          header.header-section > nav.menu-bar > div.logo {
+            padding: 0;
+            position: absolute;
+            top: 15px;
+            left: 10px;
+          }
+          header.header-section > nav.menu-bar > ul.list-menu > li {
+            display: block;
+          }
+
+            /* Language list menu */
+            header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(4) > a > img {
+              position: absolute;
+              top: 280px;
+              right: 50%;
+            }
+
+            header.header-section > nav.menu-bar > ul.list-menu > li:nth-child(5) > a > img {
+              position: absolute;
+              top: 330px;
+              right: 50%;
+            }
+          
+          .checkbtn {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 0px;
+          }
+  
+          ul.list-menu {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: var(--main-bg-color);
+            top:90px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 999;
+          }
+  
+          ul.list-menu > li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+          }
+  
+          ul.list-menu > li > a {
+            font-size: 20px;
+          }
+
+          #check:checked ~ ul {
+            left: 0;
+          }
+        }
+
+        @media only screen and (max-width:540px) {
+
+          /* custom header Mobile version for Homepage */
+          div.landing-section > header.header-section > nav.menu-bar > div.logo > a > img {
+            width: 140px;
+            height: 35px;
+          }
+
+          div.landing-section > header.header-section > nav.menu-bar > div.logo {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+          }
+
+          /* custom header Mobile version for Allpage */
+
+          header.header-section > nav.menu-bar > div.logo > a > img {
+            width: 140px;
+            height: 35px;
+          }
+
+          header.header-section > nav.menu-bar > div.logo {
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+          }
+          
+        }
+
+  /* ================================================================= */
+  /* ======================= Footer Section ========================= */
+  /* =============================================================== */
+    
+  footer.footer-section {
+    width: 100%;
+    height: 170px;
+    background-color: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  footer.footer-section > div.footer-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items > div.logo-footer {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items > div.logo-footer > a > img{
+    width: 160px;
+    height: 40px;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items > div.list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items > div.list-footer > ul.list-footer-menu > li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  footer.footer-section > div.footer-container > div.footer-items > div.list-footer > ul.list-footer-menu > li > a {
+    color:var(--main-bg-color);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  footer.footer-section > div.footer-container > div.arrowtotop {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    align-items: center;
+    /* position: absolute;
+    right: 30px; */
+  }
+
+  footer.footer-section > div.footer-container > div.arrowtotop > a {
+    display: inline-grid;
+    color:var(--main-bg-color);
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  footer.footer-section > div.footer-container > div.arrowtotop > a > span {
+    font-size: 18px;
+    text-align: center;
+  }
+
+    /* Responesive */
+
+    @media only screen and (min-width:992px) { 
+      footer.footer-section > div.footer-container {
+        grid-template-columns: 10fr 1fr;
+      }
+    }
+
+    @media only screen and (max-width:992px) {
+      footer.footer-section {
+        height: auto;      
+      }
+
+      footer.footer-section > div.footer-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+      footer.footer-section > div.footer-container > div.footer-items {
+          width: 100%;
+      }
+
+      footer.footer-section > div.footer-container > div.arrowtotop {
+        justify-content: center;
+      }
+    }
+
+    @media only screen and (max-width:540px) { 
+      footer.footer-section > div.footer-container > div.footer-items {
+        grid-template-columns: 1fr;
+      }
+
+      footer.footer-section > div.footer-container > div.footer-items > div.logo-footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+
+      footer.footer-section > div.footer-container > div.footer-items > div.list-footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+      }
+    }

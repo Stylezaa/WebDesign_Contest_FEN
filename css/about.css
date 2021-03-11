@@ -1,0 +1,153 @@
+    /* =============================================================== */
+    /* ====================== About - us Section ==================== */
+    /* ============================================================= */
+    
+    div.about-team-section {
+        width: 100%;
+        background-color: var(--four-bg-color);
+        padding: 40px 0;
+    }
+
+    div.about-team-section > div.about-team-container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    div.about-team-section > div.about-team-container > h1 {
+        color:var(--main-text-color);
+        text-align: center;
+    }
+
+    div.about-team-section > div.about-team-container > hr.about-team-line {
+        border: 2px solid var(--main-text-color);
+        width: 5%;
+        padding: 0;
+        background: var(--main-bg-color);
+        margin: 20px auto 40px;
+    }
+
+    div.about-team-section > div.about-team-container > p {
+        font-family: "LaoSansPro-Regular";
+        width: 980px;
+        margin: 0 auto;
+        color:var(--main-text-color);
+        font-size: 20px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+        /* ============================================================= */
+    /* ====================== Member Section ======================= */
+    /* ============================================================ */
+    div.member-section {
+        width: 100%;
+    }
+
+    div.member-section > div.member-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+    }
+
+    div.member-section > div.member-container > div.member-item {
+        border:1px solid var(--four-text-color);
+        padding: 40px 0;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.profile-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+
+    div.member-section > div.member-container > div.member-item > div.profile-me > div.profile-img {
+        margin-right: 40px;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.profile-me > div.profile-img > img {
+        width: 120px;
+        height: 120px;
+        border-radius: 70px;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.profile-me > div.details-me > h4 {
+        font-size: 20px;
+        line-height: 2;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.contact > ul.social {
+        display: inline-flex;
+    }
+
+    div.member-section > div.member-container > div.member-item > div.contact > ul.social > a > li {
+        list-style: none;
+        margin-right: 10px;
+    }
+
+    /* Responsive */
+
+    @media only screen and (max-width:1200px) {
+
+        div.about-team-section > div.about-team-container {
+            width: 100%;
+            padding: 0 10px;
+        }
+        
+        div.about-team-section > div.about-team-container > p {
+            width: 100%;
+        }
+
+        div.member-section > div.member-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width:992px) {
+        div.about-team-section > div.about-team-container {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        div.about-team-section > div.about-team-container > p {
+            width: 100%;
+        }
+
+        div.member-section > div.member-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+    }
+
+    @media only screen and (max-width:540px) {
+        div.about-team-section > div.about-team-container {
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        div.about-team-section > div.about-team-container > p {
+            width: 100%;
+        }
+
+        div.member-section > div.member-container > div.member-item > div.profile-me > div.details-me > h4 {
+            font-size: 17px;
+        }
+
+        div.about-team-section > div.about-team-container > hr.about-team-line {
+            width: 15%;
+        }
+    }
+
+    @media only screen and (max-width:365px) {
+
+        div.member-section > div.member-container > div.member-item > div.profile-me > div.details-me > h4 {
+            font-size: 13px;
+        }
+    }
